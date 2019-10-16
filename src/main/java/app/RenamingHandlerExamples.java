@@ -11,18 +11,18 @@ public final class RenamingHandlerExamples {
         return factorial(n - 1) * n;
     }
 
-    public int fibonnacci(int n) {
+    public int fibonnacci2(int n) {
         if(n == 0)
             return 0;
         if(n == 1)
             return 1;
-        return fibonnacci(n - 1) + fibonnacci(n - 2);
+        return fibonnacci2(n - 1) + fibonnacci2(n - 2);
     }
 
     public int computation(int n) {
-		int fibonnacci = fibonnacci(n);
+		int fibonnacci = 0;
 		int factorial = factorial(n);
-        return factorial + fibonnacci;
+        return factorial + fibonnacci2(n);
     }
    
 }
