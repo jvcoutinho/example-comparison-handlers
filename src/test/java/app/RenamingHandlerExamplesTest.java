@@ -10,6 +10,6 @@ public class RenamingHandlerExamplesTest {
      */
     @Test
     public void testComputation() {
-        assertEquals(2, new RenamingHandlerExamples().computation(1));
+        assertEquals(1, new RenamingHandlerExamples().computation(1));
     }
 }
